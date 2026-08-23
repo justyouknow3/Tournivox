@@ -1,0 +1,11 @@
+# TOURNIVOX Bracketing Manager - Apache Configuration
+RewriteEngine On
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect includes directory
+RewriteRule ^includes/ - [F,L]
+
+# Protect database directory
+RewriteRule ^database/ - [F,L]
